@@ -84,7 +84,7 @@ if ($ok)
     // disconnect!!! after inserting, disconnect from the database
     $db = null;
 
-    header('location:destination.php');
+    header('location:default.php');
 }
 
 ?>
