@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3d1294-970e-40e5-9524-2acd5a634fc2" name="Default Changelist" comment="" />
+    <list default="true" id="7a3d1294-970e-40e5-9524-2acd5a634fc2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/default.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,24 +30,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1389" />
+          <entry key="php" value="1392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="PHP" value="1385" />
+          <entry key="PHP" value="1388" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/default.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="152">
+              <caret line="8" column="142" lean-forward="true" selection-start-line="8" selection-start-column="142" selection-end-line="8" selection-end-column="142" />
             </state>
           </provider>
         </entry>
@@ -68,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+            <state relative-caret-position="88">
+              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -104,16 +106,19 @@
       <find>regionid</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/default.php" />
         <option value="$PROJECT_DIR$/destinations.php" />
         <option value="$PROJECT_DIR$/edit.php" />
         <option value="$PROJECT_DIR$/update.php" />
+        <option value="$PROJECT_DIR$/default.php" />
       </list>
     </option>
   </component>
@@ -123,11 +128,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="275" />
-    <option name="width" value="1022" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="640" />
     <option name="height" value="760" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -176,12 +181,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544716466871</updated>
-      <workItem from="1544716468597" duration="9858000" />
+      <workItem from="1544716468597" duration="10077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9858000" />
+    <option name="totallyTimeSpent" value="10077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -193,7 +198,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="275" y="0" width="1022" height="760" extended-state="0" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -201,8 +206,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32142857" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -234,13 +239,6 @@
     <entry file="file://$PROJECT_DIR$/api/destinations.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -271,8 +269,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+        <state relative-caret-position="88">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="142" lean-forward="true" selection-start-line="8" selection-start-column="142" selection-end-line="8" selection-end-column="142" />
         </state>
       </provider>
     </entry>
