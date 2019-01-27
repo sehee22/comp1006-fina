@@ -4,5 +4,5 @@ and Twitter Bootstrap.</p>
 <p>
 Live Page: <a href="http://aws.computerstudi.es/~gc200389459/final/default.php" target="_blank"> http://aws.computerstudi.es/~gc200389459/final/default.php </a> 
 <br>  
-Source Page: <a href="https://github.com/sehee22/fina" target="_blank"> https://github.com/sehee22/fina </a> 
+Source Page: <a href="https://github.com/sehee22/comp1006-fina" target="_blank"> https://github.com/sehee22/comp1006-fina </a> 
 </p>
