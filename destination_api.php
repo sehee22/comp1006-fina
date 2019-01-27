@@ -1,10 +1,10 @@
 <?php
 $title = "Destination API";
 
-require('../header.php');
+require('header.php');
 
 // connect
-require('../db.php');
+require('db.php');
 // set up the query
 $sql = "SELECT * FROM destinations";
 // check for an id parameter
@@ -39,4 +39,4 @@ $db = null;
 
 ?>
 
-<?php require('../footer.php'); ?>
+<?php require('footer.php'); ?>

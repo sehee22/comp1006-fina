@@ -6,7 +6,7 @@ $name = $_POST ['name'];
 $location = $_POST ['location'];
 $description = $_POST ['description'];
 $destinationId = $_POST['destinationId'];
-//$regionId = $_POST['regionId'];
+$regionId = null;
 
 //$region = $_POST['region'];
 $photo = null;
@@ -24,22 +24,16 @@ if (empty($location))
     echo "Location is Required. <br />";
     $ok = false;
 }
-/*
-if ($region == '-Select-')
-{
-    echo "Region is Required. </br>";
-    $ok = false;
-}
-*/
+
 // check and validate photo upload
-if (isset($_FILES['photo']))
+if (isset($_FILES['photo']['name']))
 {
     $photoFile = $_FILES['photo'];
 
     if ($photoFile['size'] > 0)
     {
         // generate unique file name
-        $photo = session_id() . "-" . $photoFile['name'];
+        $photo = $photoFile['name'];
 
         // check file type
         $fileType = null;
@@ -49,7 +43,7 @@ if (isset($_FILES['photo']))
         // allow only jpeg & png
         if (($fileType != "image/jpeg") && ($fileType != "image/jpg"))
         {
-            echo 'Please upload a valid JPG photo<br />';
+            echo 'Please upload a valid JPG or JPG photo<br />';
             $ok = false;
         }
         else
@@ -60,6 +54,17 @@ if (isset($_FILES['photo']))
     }
 
 }
+
+// region info
+$sql = "";
+$sql = "SELECT * FROM destinations WHERE destinationId =" . $destinationId;
+$cmd = $db->prepare($sql);
+$cmd->bindParam(':destinationId', $destinationId, PDO::PARAM_INT);
+$cmd->execute();
+$rsn = $cmd->fetch();
+$regionId = $rsn['regionId'];
+
+
 // connect to the database with server, username, password, dbname
 // only save if no validation errors
 if ($ok)
@@ -67,7 +72,7 @@ if ($ok)
     // PDO : PHP Database Object (regardless the database, we can use any type database system
     require('db.php');
 
-    $sql = "UPDATE destinations SET name = :name, location = :location, description = :description, photo = :photo WHERE destinationId = :destinationId";
+    $sql = "UPDATE destinations SET name = :name, location = :location, description = :description, photo = :photo, regionId = :regionId WHERE destinationId = :destinationId";
     // set up and execute an INSERT command
 
     $cmd = $db->prepare($sql);
@@ -75,16 +80,15 @@ if ($ok)
     $cmd->bindParam(':location', $location, PDO::PARAM_STR, 255);
     $cmd->bindParam(':description', $description, PDO::PARAM_STR, 2000);
     $cmd->bindParam(':photo', $photo, PDO::PARAM_STR, 255);
+    $cmd->bindParam(':regionId', $regionId, PDO::PARAM_INT);
     $cmd->bindParam(':destinationId', $destinationId, PDO::PARAM_INT);
-    //$cmd->bindParam(':regionId', $regionId, PDO::PARAM_INT);
-
 
     $cmd->execute();
 
     // disconnect!!! after inserting, disconnect from the database
     $db = null;
 
-    header('location:default.php');
+    header('location:destinations.php?regionId='.$regionId);
 }
 
 ?>

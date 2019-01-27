@@ -82,10 +82,10 @@ if (!empty($_GET['destinationId']))
 
             // fetch the results
             $cmd->execute();
-            $region = $cmd->fetchAll();
+            $regions = $cmd->fetchAll();
 
             // loop through and create a new option tag for each type
-            foreach ($region as $r)
+            foreach ($regions as $r)
             {
                 if ($r['name'] == $region)
                 {
@@ -115,7 +115,7 @@ if (!empty($_GET['destinationId']))
         ?>
     </div>
     <button class="col-md-offset-1 btn btn-primary">Save</button>
-    <input type="hidden" name ="destinationId", id="destinationId" value=<?php echo $destinationId; ?>" />
+    <input type="hidden" name ="destinationId", id="destinationId" value=<?php echo $destinationId; ?> />
 
 
 </form>

@@ -34,7 +34,7 @@
                 foreach ($regions as $region) {
                     echo '<li><a href="destinations.php?regionId=' . $region['regionId'] . '">' . $region['name'] . '</a></li>';
                 }
-                echo '<li><a href="api/destinations.php">API</a></li>';
+                echo '<li><a href="destination_api.php">API</a></li>';
                 ?>
             </ul>
         </div>
